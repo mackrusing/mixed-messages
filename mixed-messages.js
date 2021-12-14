@@ -11,6 +11,9 @@ const feminineNames = []
 // first names (neutral)
 const neutralNames = []
 
+// all names
+const allNames = [...masculineNames, ...feminineNames, ...neutralNames]
+
 // last names
 const lastNames = []
 
@@ -29,12 +32,31 @@ const alignments = []
 // life styles
 const lifeStyles = []
 
+// character object factory
+function characterFactory(name, parent1, parent2, birthplace, age, alignment, lifeStyle) {
+  return {
+    name,
+    parent1,
+    parent2,
+    birthplace,
+    age,
+    alignment,
+    lifeStyle,
+  }
+}
+
+// create a random character
+function createRandomCharacter() {
+  let lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+  let fullName = `${allNames[Math.floor(Math.random() * allNames.length)]} ${lastName}`;
+}
 
 
 /* 
 ideas: 
 - create object of character
 - calculate chance of selection
+- old / young / etc in message based on age
 
 - name (random name gen)
 - parents (random name gen)
