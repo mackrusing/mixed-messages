@@ -77,7 +77,6 @@ function createRandomCharacter() {
 const testCharacter = characterFactory('Quinn Hightopple', 'masculine', 'halfling', 'rogue', 'criminal', 'fair', 'brown', 'brown', 89, 17, 21, 'neutral', "Nice set of teeth you got there. Be a shame if something bad happened to 'em.", "No challenge is too big to overcome. As Papa Bartho always says, the bigger they are, the harder they fall", "Nothing's more important than friendship. That's why I'll never leave a friend behind.", "I can't resist punching tall folk in the groin. I call it the Halfling Hello.");
 
 console.log(testCharacter);
-
 testCharacter.info();
 
 
