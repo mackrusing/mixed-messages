@@ -23,6 +23,11 @@ const lastNames = [
 const titles = [
   'Destroyer of Worlds'
 ];
+const pronouns = [
+  'masculine',
+  'feminine',
+  'neutral'
+];
 const townName1 = [
   'North'
 ];
@@ -40,16 +45,22 @@ const lifeStyles = [
 ];
 
 // character object factory
-function characterFactory(name, parent1, parent2, birthplace, age, race, alignment, lifeStyle) {
+function characterFactory(name, pronouns, parent1, parent2, birthplace, age, race, alignment, lifeStyle) {
   return {
     name,
+    pronouns,
     parent1,
     parent2,
     birthplace,
     age,
     race,
     alignment,
-    lifeStyle
+    lifeStyle,
+    info() {
+      /*
+        
+      */
+    }
   }
 }
 
@@ -57,6 +68,7 @@ function characterFactory(name, parent1, parent2, birthplace, age, race, alignme
 function createRandomCharacter() {
   let lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
   let fullName = `${allNames[Math.floor(Math.random() * allNames.length)]} ${lastName}`;
+  let pronons = pronouns[Math.floor(Math.random() * pronouns.length)];
   let parent1Name = `${allNames[Math.floor(Math.random() * allNames.length)]} ${lastName}`;
   let parent2Name = `${allNames[Math.floor(Math.random() * allNames.length)]} ${lastName}`;
   let birthplace = townName1 + townName2;
@@ -64,10 +76,12 @@ function createRandomCharacter() {
   let race = races[Math.floor(Math.random() * races.length)];
   let alignment = alignments[Math.floor(Math.random() * alignments.length)];
   let lifeStyle = lifeStyles[Math.floor(Math.random() * lifeStyles.length)];
+  let 
   return characterFactory(fullName, parent1Name, parent2Name, birthplace, age, race, alignment, lifeStyle);
 }
 
-
+let myCharacter = createRandomCharacter();
+console.log(myCharacter);
 
 /* 
 ideas: 
@@ -85,4 +99,7 @@ ideas:
 - alignment
 - life style
 - title
+
+NAME is a AGE GROUP adventurer at the age of AGE. 
+
 */ 
