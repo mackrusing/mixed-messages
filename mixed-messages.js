@@ -2,80 +2,31 @@
 // Mixed Messages
 // 2021-12-13
 
-// variables for random character gen
-const masculineNames = [
-  'Joe'
-];
-const feminineNames = [
-  'Jean'
-];
-const neutralNames = [
-  'Jamie'
-];
-const allNames = [
-  ...masculineNames, 
-  ...feminineNames, 
-  ...neutralNames
-];
-const familyNames = [
-  'Luthorn'
-];
-const titles = [
-  'Destroyer of Worlds'
-];
-const pronouns = [
-  'masculine',
-  'feminine',
-  'neutral'
-];
-const townName1 = [
-  'North'
-];
-const townName2 = [
-  'shire'
-];
-const alignments = [
-  'neutral good'
-];
-const lifeStyles = [
-  'poor'
-];
-
-
-
-
-const races = [
-  'dwarf', 
-  ['high elf', 'wood elf', 'dark elf'], 
-  ['lightfoot halfling', 'stout halfling'], 
-  'human', 
-  'dragonborn', 
-  ['forest gnome', 'rock gnome'], 
-  'half-elf', 
-  'half-orc', 
-  'tiefling'
-];
-
-const classes = []
-
-//
-
 // character object factory
-function characterFactory(name, pronouns, parent1, parent2, birthplace, age, race, alignment, lifeStyle) {
+function characterFactory(name, pronouns, race, chClass, background, skin, eyes, hair, height, weight, age, alignment, personalityTraits, ideals, bonds, flaws) {
   return {
     name,
     pronouns,
-    parent1,
-    parent2,
-    birthplace,
-    age,
     race,
-    alignment,
-    lifeStyle,
+    chClass,
+    background,
+    appearance: {
+      skin,
+      eyes,
+      hair,
+      height,
+      weight,
+      age
+    },
+    characteristics: {
+      alignment,
+      personalityTraits,
+      ideals,
+      bonds,
+      flaws
+    },
     info() {
-      /*
-        
-      */
+
     }
   }
 }
@@ -92,15 +43,10 @@ function createRandomCharacter() {
   let race = races[Math.floor(Math.random() * races.length)];
   let alignment = alignments[Math.floor(Math.random() * alignments.length)];
   let lifeStyle = lifeStyles[Math.floor(Math.random() * lifeStyles.length)];
-  return characterFactory(fullName, parent1Name, parent2Name, birthplace, age, race, alignment, lifeStyle);
 }
-
-let myCharacter = createRandomCharacter();
-console.log(myCharacter);
 
 let testData = require('./players-handbook.json');
 console.log(testData.races.dwarf.names.first)
-// console.log(testData.races.dwarf.names.first.masculine)
 
 /* 
 ideas: 
@@ -122,18 +68,6 @@ ideas:
 - life style
 - title
 
-"races": [
-  "dwarf", 
-  ["high elf", "wood elf", "dark elf"], 
-  ["lightfoot halfling", "stout halfling"], 
-  "human", 
-  "dragonborn", 
-  ["forest gnome", "rock gnome"], 
-  "half-elf", 
-  "half-orc", 
-  "tiefling"
-]
-
 NAME is a(n) AGE GROUP RACE CLASS at the age of AGE. FIRST NAME was raised by 
 PARENT 1 FIRST NAME and PARENT 2 FIRST NAME LAST NAME in the SIZE 
 settlement/town/city of BIRTHPLACE. 
@@ -141,20 +75,23 @@ settlement/town/city of BIRTHPLACE.
 Quinn Hightopple is a young Halfling Rouge. Quinn was raised by Bartho and 
 Qelline Hightopple in the small town of Northshire. 
 
-character properties:
-- name (first + family)
+- name (first + last)
+- pronouns
 - race
-- age
-- pronoun group
 - class
 - background
-- alignment 
-- lifestyle
-- physical characteristics
-  - hair
+- appearance
   - skin
   - eyes
+  - hair
   - height
   - weight
-  - gender
+  - age
+- characteristics
+  - alignments
+  - personality traits
+  - ideals
+  - bonds
+  - flaws
+- 
 */ 
