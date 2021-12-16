@@ -8,7 +8,7 @@ const dataPool = require('./players-handbook.json');
 // capitalize function
 function capitalize(input) {
   return input[0].toUpperCase() + input.slice(1);
-}
+};
 
 // pronouns
 const pronouns = {
@@ -27,7 +27,7 @@ const pronouns = {
     objective: 'them',
     possessive: 'theirs'
   }
-}
+};
 
 // character object factory
 function characterFactory(name, pronouns, race, chClass, background, skin, eyes, hair, height, weight, age, alignment, personalityTraits, ideals, bonds, flaws) {
@@ -67,11 +67,11 @@ function characterFactory(name, pronouns, race, chClass, background, skin, eyes,
       );
     }
   }
-}
+};
 
 // create a random character
 function createRandomCharacter() {
-}
+};
 
 // test cases
 const testCharacter = characterFactory(
@@ -90,7 +90,8 @@ const testCharacter = characterFactory(
   "Nice set of teeth you got there. Be a shame if something bad happened to 'em.",
   "No challenge is too big to overcome. As Papa Bartho always says, the bigger they are, the harder they fall",
   "Nothing's more important than friendship. That's why I'll never leave a friend behind.",
-  "I can't resist punching tall folk in the groin. I call it the Halfling Hello.");
+  "I can't resist punching tall folk in the groin. I call it the Halfling Hello."
+);
 
 console.log(testCharacter);
 testCharacter.info();
