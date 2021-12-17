@@ -5,13 +5,8 @@
 // import players handbook data
 const dataPool = require('./players-handbook.json');
 
-// capitalize function
-function capitalize(input) {
-  return input[0].toUpperCase() + input.slice(1);
-};
-
 // pronouns
-const pronouns = {
+const pronounPool = {
   masculine: {
     subjective: 'he',
     objective: 'him',
@@ -29,11 +24,28 @@ const pronouns = {
   }
 };
 
+// capitalize first letter
+function capitalize(input) {
+  return input[0].toUpperCase() + input.slice(1);
+};
+
+// random item from array
+function randomFromArray(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+};
+
+// random item from object
+function randomFromObject(obj) {
+  let keys = Object.keys(obj);
+  return obj[keys[Math.floor(Math.random() * keys.length)]];
+};
+
 // character object factory
-function characterFactory(name, pronouns, race, chClass, background, skin, eyes, hair, height, weight, age, alignment, personalityTraits, ideals, bonds, flaws) {
+function characterFactory(pronouns, firstName, lastName, race, chClass, background, skin, eyes, hair, height, weight, age, alignment, personalityTraits, ideals, bonds, flaws) {
   return {
-    name, // first and last
     pronouns, // masculine (he/him), feminine (she/her), or neutral (they/them)
+    firstName, 
+    lastName,
     race,
     chClass,
     background,
@@ -53,30 +65,61 @@ function characterFactory(name, pronouns, race, chClass, background, skin, eyes,
       flaws
     },
     info() {
-      // age group
-      let ageGroup = 'aspiring'
-      if (this.appearance.age > 25) {
-        ageGroup = 'young';
-      } else if (this.appearance.age > 00) {
-        ageGroup = 'seasoned';
-      } else {
-        ageGroup = 'vetran';
-      }
+      // full name 
+      let fullName = `${this.firstName} ${this.lastName}`;
       console.log(
-        `${this.name} is a ${ageGroup} ${this.race} ${this.chClass}.`
+        `${fullName} is a ${this.race} ${this.chClass}.`
       );
+    },
+    updateAppearance() {
+      
+    },
+    updateCharacteristics() {
+      
     }
   }
 };
 
 // create a random character
 function createRandomCharacter() {
+  let randomPronouns = randomFromObject(pronounPool);
+  let randomFirstName;
+  switch (randomPronouns.subjective) {
+    case 'he':
+      randomFirstName = randomFromArray(dataPool.names.first.masculine);
+      break;
+    case 'she':
+      randomFirstName = randomFromArray(dataPool.names.first.feminine);
+      break;
+    default:
+      allNames = dataPool.names.first.masculine.concat(dataPool.names.first.feminine);
+      randomFirstName = randomFromArray(allNames);
+      break;
+  };
+  let randomLastName = randomFromArray(dataPool.names.last);
+  let randomRace = randomFromArray(dataPool.races);
+  let randomClass = randomFromArray(dataPool.classes);
+  let randomBackground;
+  // not randomized -- will be undefined in returned object
+  let randomSkin;
+  let randomEyes;
+  let randomHair;
+  let randomHeight;
+  let randomWeight;
+  let randomAge;
+  let randomAlignment;
+  let randomPersonalityTraits;
+  let randomIdeals;
+  let randomBonds;
+  let randomFlaws;
+  return characterFactory(randomPronouns, randomFirstName, randomLastName, randomRace, randomClass, randomBackground, randomSkin, randomEyes, randomHair, randomHeight, randomWeight, randomAge, randomAlignment, randomPersonalityTraits, randomIdeals, randomBonds, randomFlaws);
 };
 
 // test cases
 const testCharacter = characterFactory(
-  'Quinn Hightopple',
-  'masculine',
+  pronounPool.masculine,
+  'Quinn',
+  'Hightopple',
   'halfling',
   'rogue',
   'criminal',
@@ -93,9 +136,11 @@ const testCharacter = characterFactory(
   "I can't resist punching tall folk in the groin. I call it the Halfling Hello."
 );
 
-console.log(testCharacter);
-testCharacter.info();
+// console.log(testCharacter);
+// testCharacter.info();
 
+const randomChatacter = createRandomCharacter();
+console.log(randomChatacter);
 
 /* 
 ideas: 
