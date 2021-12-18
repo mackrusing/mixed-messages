@@ -41,7 +41,7 @@ function randomFromObject(obj) {
 };
 
 // character object factory
-function characterFactory(pronouns, firstName, lastName, race, chClass, background, skin, eyes, hair, height, weight, age, alignment, personalityTraits, ideals, bonds, flaws) {
+function characterFactory(pronouns, firstName, lastName, race, chClass, background, skin, eyes, hair, height, weight, age, alignment, personalityTrait, ideal, bond, flaw) {
   return {
     pronouns, // masculine (he/him), feminine (she/her), or neutral (they/them)
     firstName, 
@@ -59,10 +59,10 @@ function characterFactory(pronouns, firstName, lastName, race, chClass, backgrou
     },
     characteristics: {
       alignment,
-      personalityTraits,
-      ideals,
-      bonds,
-      flaws
+      personalityTrait,
+      ideal,
+      bond,
+      flaw
     },
     info() {
       // full name 
@@ -83,31 +83,38 @@ function characterFactory(pronouns, firstName, lastName, race, chClass, backgrou
 // create a random character
 function createRandomCharacter() {
   let randomPronouns = randomFromObject(pronounPool);
+  // selected race/background stores the actual object for reference
+  // random race/background stores what will be passed into the character object
+  // let selectedRace = randomFromArray(dataPool.racePool);
+  let selectedRace = dataPool.racePool[0];
+  let randomRace = selectedRace.name;
+  let selectedBackground = randomFromArray(dataPool.backgroundPool);
+  let randomBackground = selectedBackground.name;
+  let randomClass = randomFromArray(dataPool.classPool);
+  let randomAlignment = randomFromArray(dataPool.alignmentPool);
+  // influenced by race
   let randomFirstName;
   switch (randomPronouns.subjective) {
     case 'he':
-      randomFirstName = randomFromArray(dataPool.names.first.masculine);
+      randomFirstName = randomFromArray(selectedRace.namePool.first.masculine);
       break;
     case 'she':
-      randomFirstName = randomFromArray(dataPool.names.first.feminine);
+      randomFirstName = randomFromArray(selectedRace.namePool.first.feminine);
       break;
     default:
-      allNames = dataPool.names.first.masculine.concat(dataPool.names.first.feminine);
+      let allNames = selectedRace.namePool.first.masculine.concat(selectedRace.namePool.first.feminine);
       randomFirstName = randomFromArray(allNames);
       break;
   };
-  let randomLastName = randomFromArray(dataPool.names.last);
-  let randomRace = randomFromArray(dataPool.races);
-  let randomClass = randomFromArray(dataPool.classes);
-  let randomBackground;
-  // not randomized -- will be undefined in returned object
-  let randomSkin;
-  let randomEyes;
-  let randomHair;
-  let randomHeight;
-  let randomWeight;
-  let randomAge;
-  let randomAlignment;
+  let randomLastName = randomFromArray(selectedRace.namePool.last);
+  let randomSkin = randomFromArray(selectedRace.skinPool);
+  let randomEyes = randomFromArray(selectedRace.eyePool);
+  let randomHair = randomFromArray(selectedRace.hairPool);
+  let randomHeight = parseInt(selectedRace.heightPool.base) + Math.ceil(Math.random() * selectedRace.heightPool.modMax);
+  let randomWeight = selectedRace.weightPool.base * Math.ceil(Math.random() * selectedRace.weightPool.modMax);
+  let randomAge = Math.floor(Math.random() * (selectedRace.agePool.max - selectedRace.agePool.min + 1) + selectedRace.agePool.min);
+  ;
+  // influenced by background
   let randomPersonalityTraits;
   let randomIdeals;
   let randomBonds;
@@ -141,6 +148,7 @@ const testCharacter = characterFactory(
 
 const randomChatacter = createRandomCharacter();
 console.log(randomChatacter);
+randomChatacter.info()
 
 /* 
 ideas: 

@@ -1,26 +1,65 @@
 {
-  "names": {
-    "first": {
-      "masculine": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"],
-      "feminine": ["Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra"]
-    },
-    "last": ["Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart"]
-  },
-  "races": [
-    "dwarf", 
-    "high elf", 
-    "wood elf", 
-    "lightfoot halfling", 
-    "stout halfling", 
-    "human", 
-    "dragonborn", 
-    "forest gnome", 
-    "rock gnome", 
-    "half-elf", 
-    "half-orc", 
-    "tiefling"
+  "racePool": [
+    {
+      "name": "dwarf",
+      "namePool": {
+        "first": {
+          "masculine": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"],
+          "feminine": ["Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra"]
+        },
+        "last": ["Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart"]
+      },
+      "skinPool": ["mocha", "deep brown", "light brown", "deep tan", "golden"],
+      "eyePool": ["hazel", "brown", "blue", "green"],
+      "hairPool": ["black", "grey", "brown"],
+      "heightPool": {
+        "base": "142",
+        "modMax": "51"
+      },
+      "weightPool": {
+        "base": "50",
+        "modMax": "4"
+      },
+      "agePool": {
+        "min": "45",
+        "max": "300"
+      }
+    }, 
+    {
+      "name": "high elf"
+    }, 
+    {
+      "name": "wood elf"
+    }, 
+    {
+      "name": "lightfoot halfling"
+    }, 
+    {
+      "name": "stout halfling"
+    }, 
+    {
+      "name": "human"
+    }, 
+    {
+      "name": "dragonborn"
+    }, 
+    {
+      "name": "forest gnome"
+    }, 
+    {
+      "name": "rock gnome"
+    }, 
+    {
+      "name": "half-elf"
+    }, 
+    {
+      "name": "half-orc"
+    }, 
+    {
+      "name": "tiefling"
+    }
   ],
-  "classes": [
+  "classPool": [
     "barbarian",
     "bard",
     "cleric",
@@ -34,7 +73,7 @@
     "warlock",
     "wizard"
   ],
-  "alignments": [
+  "alignmentPool": [
     "lawful good", 
     "neutral good", 
     "chaotic good", 
@@ -45,19 +84,66 @@
     "neutral evil", 
     "chaotic evil"
   ],
-  "backgrounds": {
-    "acolyte": "",
-    "charlatan": "",
-    "criminal": "",
-    "entertainer": "",
-    "folk hero": "",
-    "guild artisan": "",
-    "hermit": "",
-    "noble": "",
-    "outlander": "",
-    "sage": "",
-    "sailor": "",
-    "soldier": "",
-    "urchin": ""
-  }
+  "backgroundPool": [
+    {
+      "name": "acolyte",
+      "decription": "",
+      "personalityTraitPool": [
+        "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example.", 
+        "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.",
+        "I see omens in every event and action. The gods try to speak to us, we just need to listen.",
+        "Nothing can shake my optimistic attitude.",
+        "I quote sacred texts and proverbs in almost every situation.",
+        "I misquote sacred texts and proverbs in almost every situation.",
+        "I am tolerant of other faiths and respect the worship of other gods.", 
+        "I am intolerant of other faiths and condemn the worship of other gods.", 
+        "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.",
+        "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
+      ],
+      "idealPool": {
+        "lawful": [],
+        "chaotic": [],
+        "good": [],
+        "any": []
+      },
+      "bondPool": [],
+      "flawPool": []
+    },
+    {
+      "name": "charlatan"
+    },
+    {
+      "name": "criminal"
+    },
+    {
+      "name": "entertainer"
+    },
+    {
+      "name": "folk hero"
+    },
+    {
+      "name": "guild artisan"
+    },
+    {
+      "name": "hermit"
+    },
+    {
+      "name": "noble"
+    },
+    {
+      "name": "outlander"
+    },
+    {
+      "name": "sage"
+    },
+    {
+      "name": "sailor"
+    },
+    {
+      "name": "soldier"
+    },
+    {
+      "name": "urchin"
+    }
+  ]
 }
