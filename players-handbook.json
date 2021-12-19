@@ -329,14 +329,13 @@
   "backgroundPool": [
     {
       "name": "acolyte",
-      "decription": "",
+      "decription": "has spent their life in the service of a temple to a specific god. They act as an intermediary to between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the devine.",
       "personalityTraitPool": [
         "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example.", 
         "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.",
         "I see omens in every event and action. The gods try to speak to us, we just need to listen.",
         "Nothing can shake my optimistic attitude.",
         "I quote sacred texts and proverbs in almost every situation.",
-        "I misquote sacred texts and proverbs in almost every situation.",
         "I am tolerant of other faiths and respect the worship of other gods.", 
         "I am intolerant of other faiths and condemn the worship of other gods.", 
         "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.",

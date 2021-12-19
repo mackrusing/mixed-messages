@@ -10,17 +10,20 @@ const pronounPool = {
   masculine: {
     subjective: 'he',
     objective: 'him',
-    possessive: 'his'
+    possessive: 'his',
+    reflexive: 'himself'
   },
   feminine: {
     subjective: 'she',
     objective: 'her',
-    possessive: 'hers'
+    possessive: 'hers',
+    reflexive: 'herself'
   },
   neutral: {
     subjective: 'they',
     objective: 'them',
-    possessive: 'theirs'
+    possessive: 'theirs',
+    reflexive: 'themself'
   }
 };
 
@@ -31,7 +34,7 @@ function capitalize(input) {
 
 // random number in range (inclusive)
 function randomIntInRange(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  return Math.floor(Math.random() * (parseInt(max) - parseInt(min) + 1) + parseInt(min));
 }
 
 // random item from array
@@ -51,6 +54,7 @@ function characterFactory(pronouns, firstName, lastName, race, chClass, backgrou
     pronouns, // masculine (he/him), feminine (she/her), or neutral (they/them)
     firstName, 
     lastName,
+    fullName: `${firstName} ${lastName}`,
     race,
     chClass,
     background,
@@ -69,18 +73,35 @@ function characterFactory(pronouns, firstName, lastName, race, chClass, backgrou
       bond,
       flaw
     },
-    info() {
-      // full name 
-      let fullName = `${this.firstName} ${this.lastName}`;
+    logInfo() {
       console.log(
-        `${fullName} is a ${this.race} ${this.chClass}.`
+        `${this.fullName} is a ${this.appearance.age} year old ${this.race} ${this.chClass}.`
       );
     },
-    updateAppearance() {
-      
+    logAppearance() {
+      let beForm;
+      let weighForm;
+      if (this.pronouns.subjective === 'they') {
+        beForm = 'are';
+        weighForm = 'weigh';
+      } else {
+        beForm = 'is';
+        weighForm = 'weighs';
+      }
+      console.log(
+        `${this.firstName} has ${this.appearance.skin} skin, ${this.appearance.hair} hair, and ${this.appearance.eyes} eyes. ${capitalize(this.pronouns.subjective)} ${beForm} ${this.appearance.height} cm tall and ${weighForm} ${this.appearance.weight} kg.`
+      );
     },
-    updateCharacteristics() {
-      
+    logCharacteristics() {
+      let idealQuoteArray = this.characteristics.ideal.split(' ');
+      idealQuoteArray.shift();
+      let idealQuote = idealQuoteArray.join(' ');
+      console.log(`${this.firstName} ${this.background.description}`)
+      console.log(`This is how ${this.pronouns.subjective} would describe ${this.pronouns.reflexive}: `);
+      console.log(`- "${this.characteristics.personalityTrait}"`);
+      console.log(`- "${idealQuote}"`);
+      console.log(`- "${this.characteristics.bond}"`);
+      console.log(`- "${this.characteristics.flaw}"`);
     }
   }
 };
@@ -99,7 +120,10 @@ function createRandomCharacter() {
   
   // let selectedBackground = randomFromArray(dataPool.backgroundPool); // object for reference
   let selectedBackground = dataPool.backgroundPool[0]; // remove when data is in place
-  let randomBackground = selectedBackground.name; // passed into object
+  let randomBackground = { // passed into object
+    name: selectedBackground.name,
+    description: selectedBackground.decription
+  }
   
   // influenced by race
   let randomFirstName;
@@ -158,8 +182,10 @@ const testCharacter = characterFactory(
 // testCharacter.info();
 
 const randomChatacter = createRandomCharacter();
-console.log(randomChatacter);
-randomChatacter.info()
+// console.log(randomChatacter);
+randomChatacter.logInfo();
+randomChatacter.logAppearance();
+randomChatacter.logCharacteristics();
 
 /* 
 ideas: 
