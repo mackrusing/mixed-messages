@@ -86,9 +86,10 @@ function createRandomCharacter() {
   // selected race/background stores the actual object for reference
   // random race/background stores what will be passed into the character object
   // let selectedRace = randomFromArray(dataPool.racePool);
-  let selectedRace = dataPool.racePool[0];
+  let selectedRace = dataPool.racePool[0]; // for testing purposes, remove when data is in place
   let randomRace = selectedRace.name;
-  let selectedBackground = randomFromArray(dataPool.backgroundPool);
+  // let selectedBackground = randomFromArray(dataPool.backgroundPool);
+  let selectedBackground = dataPool.backgroundPool[0]; // for testing purposes, remove when data is in place
   let randomBackground = selectedBackground.name;
   let randomClass = randomFromArray(dataPool.classPool);
   let randomAlignment = randomFromArray(dataPool.alignmentPool);
@@ -115,10 +116,10 @@ function createRandomCharacter() {
   let randomAge = Math.floor(Math.random() * (selectedRace.agePool.max - selectedRace.agePool.min + 1) + selectedRace.agePool.min);
   ;
   // influenced by background
-  let randomPersonalityTraits;
-  let randomIdeals;
-  let randomBonds;
-  let randomFlaws;
+  let randomPersonalityTraits = randomFromArray(selectedBackground.personalityTraitPool);
+  let randomIdeals = randomFromArray(selectedBackground.idealPool);
+  let randomBonds = randomFromArray(selectedBackground.bondPool);
+  let randomFlaws = randomFromArray(selectedBackground.flawPool);
   return characterFactory(randomPronouns, randomFirstName, randomLastName, randomRace, randomClass, randomBackground, randomSkin, randomEyes, randomHair, randomHeight, randomWeight, randomAge, randomAlignment, randomPersonalityTraits, randomIdeals, randomBonds, randomFlaws);
 };
 
@@ -158,10 +159,6 @@ ideas:
 - create random parents for random character
 - create random birthplace town for random character
   - town size
-
-NAME is a(n) AGE GROUP RACE CLASS at the age of AGE. FIRST NAME was raised by 
-PARENT 1 FIRST NAME and PARENT 2 FIRST NAME LAST NAME in the SIZE 
-settlement/town/city of BIRTHPLACE. 
 
 Quinn Hightopple is a young Halfling Rouge. Quinn was raised by Bartho and 
 Qelline Hightopple in the small town of Northshire. 

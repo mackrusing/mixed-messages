@@ -26,37 +26,279 @@
       }
     }, 
     {
-      "name": "high elf"
+      "name": "high elf",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "wood elf"
+      "name": "wood elf",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "lightfoot halfling"
+      "name": "lightfoot halfling",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "stout halfling"
+      "name": "stout halfling",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "human"
+      "name": "human",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "dragonborn"
+      "name": "dragonborn",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "forest gnome"
+      "name": "forest gnome",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "rock gnome"
+      "name": "rock gnome",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "half-elf"
+      "name": "half-elf",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "half-orc"
+      "name": "half-orc",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }, 
     {
-      "name": "tiefling"
+      "name": "tiefling",
+      "namePool": {
+        "first": {
+          "masculine": [],
+          "feminine": []
+        },
+        "last": []
+      },
+      "skinPool": [],
+      "eyePool": [],
+      "hairPool": [],
+      "heightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "weightPool": {
+        "base": "",
+        "modMax": ""
+      },
+      "agePool": {
+        "min": "",
+        "max": ""
+      }
     }
   ],
   "classPool": [
@@ -100,50 +342,222 @@
         "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.",
         "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
       ],
-      "idealPool": {
-        "lawful": [],
-        "chaotic": [],
-        "good": [],
-        "any": []
-      },
-      "bondPool": [],
-      "flawPool": []
+      "idealPool": [
+        "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld.",
+        "Power. I hope to one day rise to the top of my faith's religious hierarchy.",
+        "Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well.",
+        "Change. We must help bring about the changes the gods are constantly working in the world.",
+        "Charity. I always try to help those in need, no matter what the personal cost.",
+        "Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings."
+      ],
+      "bondPool": [
+        "I would die to recover an ancient relic of my faith that was lost long ago.",
+        "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.",
+        "I owe my life to the priest who took me in when my parents died.",
+        "Everything I do is for the common people.",
+        "I will do anything to protect the temple where I served.",
+        "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
+      ],
+      "flawPool": [
+        "I judge others harshly, and myself even more severely.",
+        "I put too much trust in those who wield power within my temple's hierarchy.",
+        "My piety sometimes leads me to blindly trust those that profess faith in my god.",
+        "I am inflexible in my thinking.",
+        "I am suspicious of strangers and expect the worst of them.",
+        "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
+      ]
     },
     {
-      "name": "charlatan"
+      "name": "charlatan",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "criminal"
+      "name": "criminal",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "entertainer"
+      "name": "entertainer",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "folk hero"
+      "name": "folk hero",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "guild artisan"
+      "name": "guild artisan",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "hermit"
+      "name": "hermit",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "noble"
+      "name": "noble",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "outlander"
+      "name": "outlander",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "sage"
+      "name": "sage",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "sailor"
+      "name": "sailor",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "soldier"
+      "name": "soldier",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     },
     {
-      "name": "urchin"
+      "name": "urchin",
+      "decription": "",
+      "personalityTraitPool": [
+        
+      ],
+      "idealPool": [
+        
+      ],
+      "bondPool": [
+        
+      ],
+      "flawPool": [
+        
+      ]
     }
   ]
 }
