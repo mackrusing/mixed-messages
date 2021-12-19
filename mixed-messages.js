@@ -29,6 +29,11 @@ function capitalize(input) {
   return input[0].toUpperCase() + input.slice(1);
 };
 
+// random number in range (inclusive)
+function randomIntInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 // random item from array
 function randomFromArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
@@ -82,17 +87,20 @@ function characterFactory(pronouns, firstName, lastName, race, chClass, backgrou
 
 // create a random character
 function createRandomCharacter() {
+  
+  // independent
   let randomPronouns = randomFromObject(pronounPool);
-  // selected race/background stores the actual object for reference
-  // random race/background stores what will be passed into the character object
-  // let selectedRace = randomFromArray(dataPool.racePool);
-  let selectedRace = dataPool.racePool[0]; // for testing purposes, remove when data is in place
-  let randomRace = selectedRace.name;
-  // let selectedBackground = randomFromArray(dataPool.backgroundPool);
-  let selectedBackground = dataPool.backgroundPool[0]; // for testing purposes, remove when data is in place
-  let randomBackground = selectedBackground.name;
   let randomClass = randomFromArray(dataPool.classPool);
   let randomAlignment = randomFromArray(dataPool.alignmentPool);
+  
+  // let selectedRace = randomFromArray(dataPool.racePool); // object for reference
+  let selectedRace = dataPool.racePool[0]; // remove when data is in place
+  let randomRace = selectedRace.name; // passed into object
+  
+  // let selectedBackground = randomFromArray(dataPool.backgroundPool); // object for reference
+  let selectedBackground = dataPool.backgroundPool[0]; // remove when data is in place
+  let randomBackground = selectedBackground.name; // passed into object
+  
   // influenced by race
   let randomFirstName;
   switch (randomPronouns.subjective) {
@@ -113,14 +121,16 @@ function createRandomCharacter() {
   let randomHair = randomFromArray(selectedRace.hairPool);
   let randomHeight = parseInt(selectedRace.heightPool.base) + Math.ceil(Math.random() * selectedRace.heightPool.modMax);
   let randomWeight = selectedRace.weightPool.base * Math.ceil(Math.random() * selectedRace.weightPool.modMax);
-  let randomAge = Math.floor(Math.random() * (selectedRace.agePool.max - selectedRace.agePool.min + 1) + selectedRace.agePool.min);
-  ;
+  let randomAge = randomIntInRange(selectedRace.agePool.min, selectedRace.agePool.max);
+  
   // influenced by background
-  let randomPersonalityTraits = randomFromArray(selectedBackground.personalityTraitPool);
-  let randomIdeals = randomFromArray(selectedBackground.idealPool);
-  let randomBonds = randomFromArray(selectedBackground.bondPool);
-  let randomFlaws = randomFromArray(selectedBackground.flawPool);
-  return characterFactory(randomPronouns, randomFirstName, randomLastName, randomRace, randomClass, randomBackground, randomSkin, randomEyes, randomHair, randomHeight, randomWeight, randomAge, randomAlignment, randomPersonalityTraits, randomIdeals, randomBonds, randomFlaws);
+  let randomPersonalityTrait = randomFromArray(selectedBackground.personalityTraitPool);
+  let randomIdeal = randomFromArray(selectedBackground.idealPool);
+  let randomBond = randomFromArray(selectedBackground.bondPool);
+  let randomFlaw = randomFromArray(selectedBackground.flawPool);
+  
+  // return character object
+  return characterFactory(randomPronouns, randomFirstName, randomLastName, randomRace, randomClass, randomBackground, randomSkin, randomEyes, randomHair, randomHeight, randomWeight, randomAge, randomAlignment, randomPersonalityTrait, randomIdeal, randomBond, randomFlaw);
 };
 
 // test cases
