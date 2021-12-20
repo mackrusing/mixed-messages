@@ -1,7 +1,7 @@
 {
   "racePool": [
     {
-      "name": "dwarf",
+      "name": "hill dwarf",
       "namePool": {
         "first": {
           "masculine": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"],
@@ -9,72 +9,122 @@
         },
         "last": ["Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart"]
       },
-      "skinPool": ["mocha", "deep brown", "light brown", "deep tan", "golden"],
-      "eyePool": ["hazel", "brown", "blue", "green"],
-      "hairPool": ["black", "grey", "brown"],
+      "skinPool": ["deep brown", "light brown", "deep tan", "pale"],
+      "eyePool": ["hazel", "brown", "silver-blue", "green"],
+      "hairPool": ["black", "grey", "brown", "red"],
       "heightPool": {
-        "base": "142",
-        "modMax": "51"
+        "min": "120",
+        "max": "150"
       },
       "weightPool": {
-        "base": "50",
-        "modMax": "4"
+        "min": "50",
+        "max": "90"
       },
       "agePool": {
-        "min": "45",
-        "max": "300"
+        "min": "50",
+        "max": "350"
+      }
+    }, 
+    {
+      "name": "mountain dwarf",
+      "namePool": {
+        "first": {
+          "masculine": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"],
+          "feminine": ["Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra"]
+        },
+        "last": ["Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart"]
+      },
+      "skinPool": ["light brown", "deep tan", "pale"],
+      "eyePool": ["hazel", "brown", "silver-blue", "green"],
+      "hairPool": ["black", "grey", "brown", "red"],
+      "heightPool": {
+        "min": "130",
+        "max": "150"
+      },
+      "weightPool": {
+        "min": "50",
+        "max": "90"
+      },
+      "agePool": {
+        "min": "50",
+        "max": "350"
       }
     }, 
     {
       "name": "high elf",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
+          "feminine": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia"]
         },
-        "last": []
+        "last": ["Amakiir", "Amastacia", "Galanodel", "Holimion", "Ilphelkiir", "Liadon", "Meliamne", "Naïlo", "Siannodel", "Xiloscient"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["bronze", "copper", "bluish-white", "fair", "dark bronw", "light brown"],
+      "eyePool": ["golden", "silver", "black"],
+      "hairPool": ["green", "blue"],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "140",
+        "max": "200"
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "45",
+        "max": "66"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "100",
+        "max": "750"
       }
     }, 
     {
       "name": "wood elf",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
+          "feminine": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia"]
         },
-        "last": []
+        "last": ["Amakiir", "Amastacia", "Galanodel", "Holimion", "Ilphelkiir", "Liadon", "Meliamne", "Naïlo", "Siannodel", "Xiloscient"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["copper"],
+      "eyePool": ["green", "brown", "hazel"],
+      "hairPool": ["brown", "black", "blonde"],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "140",
+        "max": "200"
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "45",
+        "max": "66"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "100",
+        "max": "750"
       }
     }, 
+    {
+      "name": "dark elf",
+      "namePool": {
+          "first": {
+            "masculine": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
+            "feminine": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia"]
+          },
+          "last": ["Amakiir", "Amastacia", "Galanodel", "Holimion", "Ilphelkiir", "Liadon", "Meliamne", "Naïlo", "Siannodel", "Xiloscient"]
+        },
+        "skinPool": ["black", "dark blue", "gray"],
+        "eyePool": ["Red", "lavender", "blue", "purple", "amber"],
+        "hairPool": ["white"],
+        "heightPool": {
+          "min": "140",
+          "max": "200"
+        },
+        "weightPool": {
+          "min": "45",
+          "max": "66"
+        },
+        "agePool": {
+          "min": "100",
+          "max": "750"
+        }
+      }, 
     {
       "name": "lightfoot halfling",
       "namePool": {
@@ -88,12 +138,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -113,12 +163,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -138,12 +188,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -163,12 +213,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -188,12 +238,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -213,12 +263,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -238,12 +288,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -263,12 +313,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "agePool": {
         "min": "",
@@ -288,12 +338,12 @@
       "eyePool": [],
       "hairPool": [],
       "heightPool": {
-        "base": "",
-        "modMax": ""
+        "min": "",
+        "max": ""
       },
       "weightPool": {
         "base": "",
-        "modMax": ""
+        "max": ""
       },
       "agePool": {
         "min": "",

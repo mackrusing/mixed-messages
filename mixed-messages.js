@@ -143,8 +143,8 @@ function createRandomCharacter() {
   let randomSkin = randomFromArray(selectedRace.skinPool);
   let randomEyes = randomFromArray(selectedRace.eyePool);
   let randomHair = randomFromArray(selectedRace.hairPool);
-  let randomHeight = parseInt(selectedRace.heightPool.base) + Math.ceil(Math.random() * selectedRace.heightPool.modMax);
-  let randomWeight = selectedRace.weightPool.base * Math.ceil(Math.random() * selectedRace.weightPool.modMax);
+  let randomHeight = randomIntInRange(selectedRace.heightPool.min, selectedRace.heightPool.max);
+  let randomWeight = randomIntInRange(selectedRace.weightPool.min, selectedRace.weightPool.max);
   let randomAge = randomIntInRange(selectedRace.agePool.min, selectedRace.agePool.max);
   
   // influenced by background
