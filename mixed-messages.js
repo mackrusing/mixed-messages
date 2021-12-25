@@ -49,15 +49,16 @@ function randomFromObject(obj) {
 };
 
 // character object factory
-function characterFactory(pronouns, firstName, lastName, race, chClass, background, skin, eyes, hair, height, weight, age, alignment, personalityTrait, ideal, bond, flaw) {
+function characterFactory(pronouns, firstName, lastName, race, chClass, background, alignment, skin, eyes, hair, height, weight, age) {
   return {
     pronouns, // masculine (he/him), feminine (she/her), or neutral (they/them)
     firstName, 
     lastName,
-    fullName: `${firstName} ${lastName}`,
+    fullName: lastName ? `${firstName} ${lastName}` : firstName,
     race,
     chClass,
     background,
+    alignment,
     appearance: {
       skin,
       eyes,
@@ -66,19 +67,7 @@ function characterFactory(pronouns, firstName, lastName, race, chClass, backgrou
       weight, // in kg
       age
     },
-    characteristics: {
-      alignment,
-      personalityTrait,
-      ideal,
-      bond,
-      flaw
-    },
     logInfo() {
-      console.log(
-        `${this.fullName} is a ${this.appearance.age} year old ${this.race} ${this.chClass}.`
-      );
-    },
-    logAppearance() {
       let beForm;
       let weighForm;
       if (this.pronouns.subjective === 'they') {
@@ -89,19 +78,17 @@ function characterFactory(pronouns, firstName, lastName, race, chClass, backgrou
         weighForm = 'weighs';
       }
       console.log(
-        `${this.firstName} has ${this.appearance.skin} skin, ${this.appearance.hair} hair, and ${this.appearance.eyes} eyes. ${capitalize(this.pronouns.subjective)} ${beForm} ${this.appearance.height} cm tall and ${weighForm} ${this.appearance.weight} kg.`
+        `${this.fullName} is a ${this.appearance.age} year old ${this.race} ${this.chClass}.`
       );
-    },
-    logCharacteristics() {
-      let idealQuoteArray = this.characteristics.ideal.split(' ');
-      idealQuoteArray.shift();
-      let idealQuote = idealQuoteArray.join(' ');
-      console.log(`${this.firstName} ${this.background.description}`)
-      console.log(`This is how ${this.pronouns.subjective} would describe ${this.pronouns.reflexive}: `);
-      console.log(`- "${this.characteristics.personalityTrait}"`);
-      console.log(`- "${idealQuote}"`);
-      console.log(`- "${this.characteristics.bond}"`);
-      console.log(`- "${this.characteristics.flaw}"`);
+      this.appearance.hair ? (
+        console.log(
+          `${this.firstName} has ${this.appearance.skin} skin, ${this.appearance.hair} hair, and ${this.appearance.eyes} eyes. ${capitalize(this.pronouns.subjective)} ${beForm} ${this.appearance.height} cm tall and ${weighForm} ${this.appearance.weight} kg.`
+        )
+      ) : (
+        console.log(
+          `${this.firstName} has ${this.appearance.skin} skin and ${this.appearance.eyes} eyes. ${capitalize(this.pronouns.subjective)} ${beForm} ${this.appearance.height} cm tall and ${weighForm} ${this.appearance.weight} kg.`
+        )
+      );
     }
   }
 };
@@ -113,16 +100,10 @@ function createRandomCharacter() {
   let randomPronouns = randomFromObject(pronounPool);
   let randomClass = randomFromArray(dataPool.classPool);
   let randomAlignment = randomFromArray(dataPool.alignmentPool);
+  let randomBackground = randomFromArray(dataPool.backgroundPool);
   
   let selectedRace = randomFromArray(dataPool.racePool); // for reference
   let randomRace = selectedRace.name; // passed into object
-  
-  // let selectedBackground = randomFromArray(dataPool.backgroundPool); // for reference
-  let selectedBackground = dataPool.backgroundPool[0]; // remove when data is in place
-  let randomBackground = { // passed into object
-    name: selectedBackground.name,
-    description: selectedBackground.decription
-  }
   
   // influenced by race
   let randomFirstName;
@@ -146,17 +127,26 @@ function createRandomCharacter() {
   let randomWeight = randomIntInRange(selectedRace.weightPool.min, selectedRace.weightPool.max);
   let randomAge = randomIntInRange(selectedRace.agePool.min, selectedRace.agePool.max);
   
-  // influenced by background
-  let randomPersonalityTrait = randomFromArray(selectedBackground.personalityTraitPool);
-  let randomIdeal = randomFromArray(selectedBackground.idealPool);
-  let randomBond = randomFromArray(selectedBackground.bondPool);
-  let randomFlaw = randomFromArray(selectedBackground.flawPool);
-  
   // return character object
-  return characterFactory(randomPronouns, randomFirstName, randomLastName, randomRace, randomClass, randomBackground, randomSkin, randomEyes, randomHair, randomHeight, randomWeight, randomAge, randomAlignment, randomPersonalityTrait, randomIdeal, randomBond, randomFlaw);
+  return characterFactory(randomPronouns, randomFirstName, randomLastName, randomRace, randomClass, randomBackground, randomAlignment, randomSkin, randomEyes, randomHair, randomHeight, randomWeight, randomAge);
 };
 
-const randomChatacter = createRandomCharacter();
-randomChatacter.logInfo();
-randomChatacter.logAppearance();
-randomChatacter.logCharacteristics();
+const testCharacter = characterFactory(
+  pronounPool.masculine,
+  'Quinn',
+  'Hightopple',
+  'lightfoot halfling',
+  'fighter',
+  'folk hero',
+  'neutral good',
+  'pale',
+  'hazel',
+  'wavy brown',
+  90,
+  17,
+  21
+);
+// testCharacter.logInfo();
+
+const randomChartacter = createRandomCharacter();
+randomChartacter.logInfo();
