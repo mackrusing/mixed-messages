@@ -157,45 +157,7 @@ function createRandomCharacter() {
   return characterFactory(randomPronouns, randomFirstName, randomLastName, randomRace, randomClass, randomBackground, randomSkin, randomEyes, randomHair, randomHeight, randomWeight, randomAge, randomAlignment, randomPersonalityTrait, randomIdeal, randomBond, randomFlaw);
 };
 
-// test cases
-const testCharacter = characterFactory(
-  pronounPool.masculine,
-  'Quinn',
-  'Hightopple',
-  'halfling',
-  'rogue',
-  'criminal',
-  'fair',
-  'brown',
-  'brown',
-  89,
-  17,
-  21,
-  'neutral',
-  "Nice set of teeth you got there. Be a shame if something bad happened to 'em.",
-  "No challenge is too big to overcome. As Papa Bartho always says, the bigger they are, the harder they fall",
-  "Nothing's more important than friendship. That's why I'll never leave a friend behind.",
-  "I can't resist punching tall folk in the groin. I call it the Halfling Hello."
-);
-
-// console.log(testCharacter);
-// testCharacter.info();
-
 const randomChatacter = createRandomCharacter();
-// console.log(randomChatacter);
 randomChatacter.logInfo();
 randomChatacter.logAppearance();
 randomChatacter.logCharacteristics();
-
-/* 
-ideas: 
-- old / young / etc in message based on age
-- put data in an object, add getters and setters
-- randomization limits based on race
-- create random parents for random character
-- create random birthplace town for random character
-  - town size
-
-Quinn Hightopple is a young Halfling Rouge. Quinn was raised by Bartho and 
-Qelline Hightopple in the small town of Northshire. 
-*/ 

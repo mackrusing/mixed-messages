@@ -1,6 +1,6 @@
 # Mixed Messages
 
-The program generates a random d&d character and prints information about it to the console. All the data the characters are created from is from the 5e Player's Handbook.
+A program that generates a random d&d character and prints information about it to the console. All the data the characters are created from is from the 5e Player's Handbook.
 
 The data is randomly selected in one function and passed into a second function that creates an object. This object has a few properties:
 - name
