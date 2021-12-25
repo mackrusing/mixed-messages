@@ -59,7 +59,7 @@
         },
         "last": ["Amakiir", "Amastacia", "Galanodel", "Holimion", "Ilphelkiir", "Liadon", "Meliamne", "Naïlo", "Siannodel", "Xiloscient"]
       },
-      "skinPool": ["bronze", "copper", "bluish-white", "fair", "dark bronw", "light brown"],
+      "skinPool": ["bronze", "copper", "bluish-white", "fair", "dark brown", "light brown"],
       "eyePool": ["golden", "silver", "black"],
       "hairPool": ["green", "blue"],
       "heightPool": {
@@ -129,225 +129,225 @@
       "name": "lightfoot halfling",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Alton", "Ander", "Cade", "Corrin", "Eldon", "Errich", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Milo", "Osborn", "Perrin", "Reed", "Roscoe", "Wellby"],
+          "feminine": ["Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna"]
         },
-        "last": []
+        "last": ["Brushgather", "Goodbarrel", "Greenbottle", "High-hill", "Hilltopple", "Leagallow", "Tealeaf", "Thorngage", "Tosscobble", "Underbough"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["pale", "fair", "dark brown", "light brown"],
+      "eyePool": ["black", "brown", "hazel"],
+      "hairPool": ["auburn", "black", "brown"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "81",
+        "max": "100"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "14",
+        "max": "16"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "20",
+        "max": "150"
       }
     }, 
     {
       "name": "stout halfling",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Alton", "Ander", "Cade", "Corrin", "Eldon", "Errich", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Milo", "Osborn", "Perrin", "Reed", "Roscoe", "Wellby"],
+          "feminine": ["Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna"]
         },
-        "last": []
+        "last": ["Brushgather", "Goodbarrel", "Greenbottle", "High-hill", "Hilltopple", "Leagallow", "Tealeaf", "Thorngage", "Tosscobble", "Underbough"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["pale", "fair", "dark brown", "light brown"],
+      "eyePool": ["black", "brown", "hazel"],
+      "hairPool": ["auburn", "black", "brown"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "81",
+        "max": "100"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "14",
+        "max": "16"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "20",
+        "max": "150"
       }
     }, 
     {
       "name": "human",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Aseir", "Bardeid", "Haseid", "Khemed", "Mehmen", "Sudeiman", "Zasheir", "Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd", "Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor", "Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth", "Aoth", "Bareris", "Ehput-Ki", "Kethoth", "Mumed", "Ramas", "So-Kehur", "Thazar-De", "Urhur", "Borivik", "Faurgar", "Jandar", "Kanithar", "Madislak", "Ralmevik", "Shaumar", "Vladislak", "An", "Chen", "Chi", "Fai", "Jiang", "Jun", "Lian", "Long", "Meng", "On", "Shan", "Shui", "Wen", "Anton", "Diero", "Marcon", "Pieron", "Rimardo", "Romero", "Salazar", "Umbero"],
+          "feminine": ["Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora", "Yasheira", "Zasheida", "Arveene", "Esvele", "Jhessail", "Kerri", "Lureene", "Miri", "Rowan", "Shandri", "Tessele", "Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora", "Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra", "Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis", "Fyevarra", "Hulmarra", "Immith", "Imzel", "Navarra", "Shevarra", "Tammith", "Yuldra", "Bai", "Chao", "Jia", "Lei", "Mei", "Qiao", "Shui", "Tai", "Balama", "Dona", "Faila", "Jalana", "Luisa", "Marta", "Quara", "Selise", "Vonda"]
         },
-        "last": []
+        "last": ["Basha", "Dumein", "Jassan", "Khalid", "Mostana", "Pashar", "Rein", "Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag", "Bersk", "Chernin", "Dotsk", "Kulenov", "Marsk", "Nemetsk", "Shemov", "Starag", "Brightwood", "Helder", "Hornraven", "Lackman", "Stormwind", "Windrivver", "Ankhalab", "Anskuld", "Fezim", "Hahpet", "Nathandem", "Sepret", "Uuthrakt", "Chergoba", "Dyernina", "Iltazyara", "Murnyethara", "Stayanoga", "Ulmokina", "Chien", "Huang", "Kao", "Kung", "Lao", "Ling", "Mei", "Pin", "Shin", "Sum", "Tan", "Wan", "Agosto", "Astorio", "Calabra", "Domine", "Falone", "Marivaldi", "Pisacar", "Ramondo"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["pale", "fair", "light brown", "dark brown"],
+      "eyePool": ["blue", "brown", "gray", "green", "hazel"],
+      "hairPool": ["red", "blond", "brown", "black"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "140",
+        "max": "200"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "40",
+        "max": "130"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "18",
+        "max": "70"
       }
     }, 
     {
       "name": "dragonborn",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Arjhan", "Balasar", "Bharash", "Donaar", "Ghesh", "Heskan", "Kriv", "Medrash", "Mehen", "Nadarr", "Pandjed", "Patrin", "Rhogar", "Shamash", "Shedinn", "Tarhun", "Torinn"],
+          "feminine": ["Akra", "Biri", "Daar", "Farideh", "Harann", "Havilar", "Jheri", "Kava", "Korinn", "Mishann", "Nala", "Perra", "Raiann", "Sora", "Surina", "Thava", "Uadjit"]
         },
-        "last": []
+        "last": ["Clethtinthiallor", "Daardendrian", "Delmirev", "Drachedandion", "Fenkenkabradon", "Kepeshkmolik", "Kerrhylon", "Kimbatuul", "Linxakasendalor", "Myastan", "Nemmonis", "Norixius", "Ophinshtalajiir", "Prexijandilin", "Shestendeliath", "Turnuroth", "Verthisathurgiesh", "Yarjerit"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["scarlet scaled", "gold scaled", "rust scaled", "ocher scaled", "bronze scaled", "brown scaled"],
+      "eyePool": ["red", "gold"],
+      "hairPool": [null],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "190",
+        "max": "200"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "100",
+        "max": "150"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "15",
+        "max": "80"
       }
     }, 
     {
       "name": "forest gnome",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Alston", "Alvyn", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo", "Gimble", "Glim", "Jebeddo", "Kellen", "Namfoodle", "Orryn", "Roondar", "Seebo", "Sindri", "Warryn", "Wrenn", "Zook"],
+          "feminine": ["Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell", "Ellywick", "Lilli", "Loopmottin", "Lorilla", "Mardnab", "Nissa", "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana", "Waywocket", "Zanna"]
         },
-        "last": []
+        "last": ["Beren", "Daergel", "Folkor", "Garrick", "Nackle", "Murnig", "Ningel", "Raulnor", "Scheppen", "Timbers", "Turen"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["ruddy tan", "woody brown", "rocky grey"],
+      "eyePool": ["black", "blue"],
+      "hairPool": ["red", "blond", "brown", "black"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "91",
+        "max": "120"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "18",
+        "max": "20"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "40",
+        "max": "400"
       }
     }, 
     {
       "name": "rock gnome",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Alston", "Alvyn", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo", "Gimble", "Glim", "Jebeddo", "Kellen", "Namfoodle", "Orryn", "Roondar", "Seebo", "Sindri", "Warryn", "Wrenn", "Zook"],
+          "feminine": ["Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell", "Ellywick", "Lilli", "Loopmottin", "Lorilla", "Mardnab", "Nissa", "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana", "Waywocket", "Zanna"]
         },
-        "last": []
+        "last": ["Beren", "Daergel", "Folkor", "Garrick", "Nackle", "Murnig", "Ningel", "Raulnor", "Scheppen", "Timbers", "Turen"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["ruddy tan", "woody brown", "rocky grey"],
+      "eyePool": ["black", "blue"],
+      "hairPool": ["red", "blond", "brown", "black"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "91",
+        "max": "120"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "18",
+        "max": "20"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "40",
+        "max": "400"
       }
     }, 
     {
       "name": "half-elf",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Aseir", "Bardeid", "Haseid", "Khemed", "Mehmen", "Sudeiman", "Zasheir", "Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd", "Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor", "Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth", "Aoth", "Bareris", "Ehput-Ki", "Kethoth", "Mumed", "Ramas", "So-Kehur", "Thazar-De", "Urhur", "Borivik", "Faurgar", "Jandar", "Kanithar", "Madislak", "Ralmevik", "Shaumar", "Vladislak", "An", "Chen", "Chi", "Fai", "Jiang", "Jun", "Lian", "Long", "Meng", "On", "Shan", "Shui", "Wen", "Anton", "Diero", "Marcon", "Pieron", "Rimardo", "Romero", "Salazar", "Umbero"],
+          "feminine": ["Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora", "Yasheira", "Zasheida", "Arveene", "Esvele", "Jhessail", "Kerri", "Lureene", "Miri", "Rowan", "Shandri", "Tessele", "Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora", "Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra", "Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis", "Fyevarra", "Hulmarra", "Immith", "Imzel", "Navarra", "Shevarra", "Tammith", "Yuldra", "Bai", "Chao", "Jia", "Lei", "Mei", "Qiao", "Shui", "Tai", "Balama", "Dona", "Faila", "Jalana", "Luisa", "Marta", "Quara", "Selise", "Vonda"]
         },
-        "last": []
+        "last": ["Basha", "Dumein", "Jassan", "Khalid", "Mostana", "Pashar", "Rein", "Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag", "Bersk", "Chernin", "Dotsk", "Kulenov", "Marsk", "Nemetsk", "Shemov", "Starag", "Brightwood", "Helder", "Hornraven", "Lackman", "Stormwind", "Windrivver", "Ankhalab", "Anskuld", "Fezim", "Hahpet", "Nathandem", "Sepret", "Uuthrakt", "Chergoba", "Dyernina", "Iltazyara", "Murnyethara", "Stayanoga", "Ulmokina", "Chien", "Huang", "Kao", "Kung", "Lao", "Ling", "Mei", "Pin", "Shin", "Sum", "Tan", "Wan", "Agosto", "Astorio", "Calabra", "Domine", "Falone", "Marivaldi", "Pisacar", "Ramondo"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["pale", "fair", "light brown", "dark brown"],
+      "eyePool": ["golden", "silver", "black"],
+      "hairPool": ["red", "blond", "brown", "black"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "140",
+        "max": "190"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "38",
+        "max": "110"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "20",
+        "max": "180"
       }
     }, 
     {
       "name": "half-orc",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump", "Thokk"],
+          "feminine": ["Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Sutha", "Vola", "Volen", "Yevelda"]
         },
-        "last": []
+        "last": [null]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["grey"],
+      "eyePool": ["black"],
+      "hairPool": ["black", "brown"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "140",
+        "max": "210"
       },
       "weightPool": {
-        "min": "",
-        "max": ""
+        "min": "52",
+        "max": "200"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "14",
+        "max": "75"
       }
     }, 
     {
       "name": "tiefling",
       "namePool": {
         "first": {
-          "masculine": [],
-          "feminine": []
+          "masculine": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon", "Leucis", "Melech", "Mordai", "Morthos", "Pelaios", "Skamos", "Therai"],
+          "feminine": ["Akta", "Anakis", "Bryseis", "Criella", "Damaia", "Ea", "Kallista", "Lerissa", "Makaria", "Nemeia", "Orianna", "Phelaia", "Rieta"]
         },
-        "last": []
+        "last": ["Art", "Carrion", "Chant", "Creed", "Despair", "Excellence", "Fear", "Glory", "Hope", "Ideal", "Music", "Nowhere", "Open", "Poetry", "Quest", "Random", "Reverence", "Sorrow", "Temerity", "Torment", "Weary"]
       },
-      "skinPool": [],
-      "eyePool": [],
-      "hairPool": [],
+      "skinPool": ["light red", "dark red", "pale", "fair", "light brown", "dark brown"],
+      "eyePool": ["black", "gold", "red", "silver", "white"],
+      "hairPool": ["red", "brown", "black", "dark blue", "purple"],
       "heightPool": {
-        "min": "",
-        "max": ""
+        "min": "150",
+        "max": "180"
       },
       "weightPool": {
-        "base": "",
-        "max": ""
+        "base": "52",
+        "max": "108"
       },
       "agePool": {
-        "min": "",
-        "max": ""
+        "min": "18",
+        "max": "70"
       }
     }
   ],

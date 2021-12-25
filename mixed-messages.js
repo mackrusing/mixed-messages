@@ -114,11 +114,10 @@ function createRandomCharacter() {
   let randomClass = randomFromArray(dataPool.classPool);
   let randomAlignment = randomFromArray(dataPool.alignmentPool);
   
-  // let selectedRace = randomFromArray(dataPool.racePool); // object for reference
-  let selectedRace = dataPool.racePool[0]; // remove when data is in place
+  let selectedRace = randomFromArray(dataPool.racePool); // for reference
   let randomRace = selectedRace.name; // passed into object
   
-  // let selectedBackground = randomFromArray(dataPool.backgroundPool); // object for reference
+  // let selectedBackground = randomFromArray(dataPool.backgroundPool); // for reference
   let selectedBackground = dataPool.backgroundPool[0]; // remove when data is in place
   let randomBackground = { // passed into object
     name: selectedBackground.name,
