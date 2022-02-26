@@ -40,7 +40,7 @@ The data is randomly selected in one function and passed into a second function 
 
 ```js
 {
-  pronouns: {Object}
+  pronouns: { Object }
   firstName: 'Adrik',
   lastName: 'Balderk',
   fullName: 'Adrik Balderk',
@@ -57,6 +57,15 @@ The data is randomly selected in one function and passed into a second function 
     age: '68',
   }
 }
+```
+
+The object uses the `.logInfo()` method to return information about the character. That looks something like this:
+
+```
+Adrik Balderk is a 68 year old hill dwarf barbarian.
+
+Adrik has deep tan skin, brown hair, and brown eyes.
+They are 132 cm tall and weigh 65 kg.
 ```
 
 ## Issues

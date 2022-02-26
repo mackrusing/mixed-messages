@@ -8,5 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mack Rusing",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackrusing/mixed-messages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mackrusing/mixed-messages/issues"
+  },
+  "homepage": "https://github.com/mackrusing/mixed-messages#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
 }
