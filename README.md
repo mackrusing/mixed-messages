@@ -12,7 +12,6 @@ A program that generates a random d&d character and prints information about it 
 - [Usage](#usage)
 - [Issues](#issues)
 - [License](#license)
-- [Referemces](#references)
 
 ## Installation
 
@@ -59,7 +58,7 @@ The data is randomly selected in one function and passed into a second function 
 }
 ```
 
-The object uses the `.logInfo()` method to return information about the character. That looks something like this:
+The object uses the `.logInfo()` method to log information about the character to the console. That looks something like this:
 
 ```
 Adrik Balderk is a 68 year old hill dwarf barbarian.
@@ -70,6 +69,10 @@ They are 132 cm tall and weigh 65 kg.
 
 ## Issues
 
+If you find any bugs, feel free to open an issue on this project's [issue page](https://github.com/mackrusing/mixed-messages/issues).
+
 ## License
 
-## References
+Source code is licesnsed under the [MIT License](./license.md).
+
+Player data taken from the 5e Player's Handbook is subject to copyright restrictions as defined by [Wizards of the Coast LLC](https://company.wizards.com/en).

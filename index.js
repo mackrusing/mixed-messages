@@ -2,7 +2,7 @@
 // Mixed Messages
 // 2021-12-13
 
-// import players handbook data
+// import data
 const dataPool = require('./players-handbook.json');
 
 // pronouns
@@ -178,23 +178,6 @@ function createRandomCharacter() {
     randomAge
   );
 }
-
-const testCharacter = characterFactory(
-  pronounPool.masculine,
-  'Quinn',
-  'Hightopple',
-  'lightfoot halfling',
-  'fighter',
-  'folk hero',
-  'neutral good',
-  'pale',
-  'hazel',
-  'wavy brown',
-  90,
-  17,
-  21
-);
-// testCharacter.logInfo();
 
 const randomChartacter = createRandomCharacter();
 randomChartacter.logInfo();
